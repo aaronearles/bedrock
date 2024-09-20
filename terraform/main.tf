@@ -38,7 +38,7 @@ resource "linode_instance" "instance" {
   # stackscript_id  = var.stackscript_id != "" ? var.stackscript_id : null
   region           = "us-lax"
   type             = "g6-nanode-1"
-  authorized_users = var.authorized_users
+  authorized_users = ["${var.authorized_users}"]
   metadata {
     user_data = base64encode(templatefile("cloud-init.tftpl", { var = "var" }))
   }
