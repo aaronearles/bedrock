@@ -47,7 +47,8 @@ services:
       - GID=0
       - TZ=US/Denver
     volumes:
-      - ./MCXboxBroadcastStandalone.jar:/opt/app/MCXboxBroadcastStandalone.jar
+      # - ./MCXboxBroadcastStandalone.jar:/opt/app/MCXboxBroadcastStandalone.jar
+      - ./config.yml:/opt/app/config/config.yml
       - ./config:/opt/app/config
     networks:
       - backend
