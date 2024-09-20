@@ -40,7 +40,7 @@ resource "linode_instance" "instance" {
   type             = "g6-nanode-1"
   authorized_users = var.authorized_users
   metadata {
-    user_data = base64encode(templatefile("cloud-init.tftpl", {var = "var"}))
+    user_data = base64encode(templatefile("cloud-init.tftpl", { var = "var" }))
   }
 }
 
