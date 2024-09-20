@@ -13,6 +13,8 @@ jobs:
     env:
       TF_VAR_b2_application_key_id: ${{ secrets.b2_application_key_id }}
       TF_VAR_b2_application_key: ${{ secrets.b2_application_key }}
+      TF_VAR_linode_token: ${{ secrets.linode_token }}
+      TF_VAR_authorized_users: ${{ vars.authorized_users }}
 
     runs-on: ubuntu-latest
     # environment: # No Environments available in Private (Free) Repo
