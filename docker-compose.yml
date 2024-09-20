@@ -34,7 +34,7 @@ services:
       - DEFAULT_PLAYER_PERMISSION_LEVEL=member
       - OPS=2533275026015377
     volumes:
-      - ./data:/data
+      - bedrock-data:/data
     networks:
       - backend
 
@@ -49,10 +49,13 @@ services:
     volumes:
       # - ./MCXboxBroadcastStandalone.jar:/opt/app/MCXboxBroadcastStandalone.jar
       - ./config.yml:/opt/app/config/config.yml
-      - ./config:/opt/app/config
+      - bedrock-config:/opt/app/config
     networks:
       - backend
 
+volumes:
+  bedrock-data:
+  bedrock-config:
 
 networks:
   backend:

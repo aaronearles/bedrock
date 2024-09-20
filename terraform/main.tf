@@ -48,6 +48,7 @@ output "instance_ip" {
   value = linode_instance.instance.ip_address
 }
 
+# Add Linode firewall
 # Add cloudflare DNS entry resource
 # Install Docker
 # Git clone docker-compose.yml
