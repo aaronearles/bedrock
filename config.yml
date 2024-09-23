@@ -9,20 +9,20 @@ session:
 
   # The data to broadcast over xbox live, this is the default if querying is enabled
   session-info:
-    host-name: "Earles"
+    host-name: "EARLES"
     world-name: "SYNCH ERROR"
-    version: 1.21.23
+    version: 1.21.30
     protocol: 527
     players: 0
     max-players: 0
-    ip: mc.earles.io
+    ip: vpn.earles.io
     port: 19132
 
 # Friend/follower list sync settings
 friend-sync:
   # The amount of time in seconds to check for follower changes
   # This can be no lower than 20 due to xbox rate limits
-  update-interval: 30
+  update-interval: 20
 
   # Should we automatically follow people that follow us
   auto-follow: true
